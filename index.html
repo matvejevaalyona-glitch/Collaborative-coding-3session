@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Me If You Can</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Quiz Me If You Can</h1>
+        <h3>This is a fun request! Here are 5 multiple-choice questions about preferences, and a "pastry personality" result at the end. 🍰</h3>
+    </header>
+<main>
+    <section>    
+<form id="quiz_form" action="/submit-quiz" method="post">
+    <h2>Choose one answer</h2>
+<!-- Questions 1-->    
+   <fieldset>
+<legend>1. What color best represents your ideal mood?</legend>
+    <div class="question-slide" id="question-1"> 
+        <input type="radio" id="q1-a" name="q1" value="A">
+            <label for="q1-a">A. Deep calming blue, like the ocean at dusk.</label>
+        <input type="radio" id="q1-b" name="q1" value="B">
+            <label for="q1-b">B. Bright, energetic yellow, like a sunny morning.</label>
+        <input type="radio" id="q1-c" name="q1" value="C">
+            <label for="q1-c">C. Rich, deep red, like a velvet curtain.</label>
+        <input type="radio" id="q1-d" name="q1" value="D">
+            <label for="q1-d">D. Soft, earthy green, like a lush forest.</label> 
+    </div>
+
+   </fieldset>
+
+   <!-- Questions 2-->    
+   <fieldset hidden>
+   <legend>2. Where would you most like to spend a long vacation?</legend>
+    <div class="question-slide" id="question-2"> 
+        <input type="radio" id="q2-a" name="q2" value="A">
+            <label for="q2-a">A. A small, historic town in France with cobblestone streets.</label>
+        <input type="radio" id="q2-b" name="q2" value="B">
+            <label for="q2-b">B. A lively, bustling city in Japan with bright lights and innovative culture.</label> 
+        <input type="radio" id="q2-c" name="q2" value="C">
+            <label for="q1-a">C. A mountainous region in Austria known for its elegant architecture and music.</label>
+        <input type="radio" id="q2-d" name="q2" value="D">
+            <label for="q2-d">D. A coastal village in Italy with a warm, relaxed atmosphere.</label> 
+    </div>
+
+   </fieldset>
+
+<!-- Questions 3-->
+   <fieldset hidden>
+<legend>3. Which best describes the way you prefer to communicate or learn?</legend>
+    <div class="question-slide" id="question-3"> 
+        <input type="radio" id="q3-a" name="q3" value="A">
+            <label for="q3-a">A. Precisely and formally; I appreciate clear rules and structure (Grammar/Logic).</label>
+        <input type="radio" id="q3-b" name="q3" value="B">
+            <label for="q3-b">B. Quickly and efficiently; I look for the most direct path to the result (Speed/Innovation).</label>  
+        <input type="radio" id="q3-c" name="q3" value="C">
+            <label for="q3-c">C. Elegantly and persuasively; I value beauty and tradition in expression (Rhetoric/Art).</label>
+        <input type="radio" id="q3-d" name="q3" value="D">
+            <label for="q3-d">D. Warmly and expressively; I prefer to connect on an emotional level (Storytelling/Feeling).</label> 
+    </div>
+
+   </fieldset>
+
+   <!-- Questions 4-->       
+   <fieldset hidden>
+<legend>4. What weather condition do you find most appealing?</legend>
+    <div class="question-slide" id="question-4"> 
+        <input type="radio" id="q4-a" name="q4" value="A">
+            <label for="q4-a">A. A steady, light rain that clears the air and leaves a fresh scent.</label>
+        <input type="radio" id="q4-b" name="q4" value="B">
+            <label for="q4-b">B. A perfectly crisp, bright, and sunny day with a cool breeze.</label>
+        <input type="radio" id="q4-c" name="q4" value="C">
+            <label for="q4-c">C. A cozy, slightly overcast day, perfect for staying inside and relaxing.</label>
+        <input type="radio" id="q4-d" name="q4" value="D">
+            <label for="q4-d">D. A warm, balmy evening with a gentle, consistent temperature.</label> 
+    </div>
+
+   </fieldset>
+
+   <!-- Questions 5-->  
+   <fieldset hidden>
+<legend>5. Which best describes your ideal flavor profile in a treat?</legend>
+    <div class="question-slide" id="question-5"> 
+        <input type="radio" id="q5-a" name="q5" value="A">
+            <label for="q5-a">A. Subtle, complex, and slightly savory or nutty.</label>
+        <input type="radio" id="q5-b" name="q5" value="B">
+            <label for="q5-b">B. Bright, tangy, and refreshing, often with fruit.</label>  
+        <input type="radio" id="q5-c" name="q5" value="C">
+            <label for="q5-a">C. Rich, indulgent, and comforting, often with chocolate.</label>
+        <input type="radio" id="q5-d" name="q5" value="D">
+            <label for="q5-d">D. Sweet, simple, and classic, like vanilla or butter.</label> 
+    </div>
+
+   </fieldset>
+
+   <button type="submit">Submit Quiz</button>
+
+
+</form>
+<hr> 
+<div id="quiz-results">
+        <p>Final Result</p>
+</div>
+    </section>
+<footer></footer>
+<script src="script.js">
+</script>
+</body>
+
+</html>
